@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Online convertor</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+            <div class="container topnav">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand topnav" href="#">Online konvertor</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#services">Usluge</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+
+        <!-- Header -->
+        <a name="about"></a>
+        <div class="intro-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Online konvertor</h1>
+                            <h3>Konvertujte valute, odredite geografske koordinate nekog mesta</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /.intro-header -->
+
+        <!-- Page Content -->
+
+        <a  name="services"></a>
+        <div class="content-section-a">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-6">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Konvertovanje valuta</h2>
+                        <p class="lead">
+                        <label id="lblresult4" type="hidden">Iznos za konverziju: </label>
+                       	<input type="number" name="fname" id="iznos" min="1" style="position-right"> <br>
+	<label id="lblresult5" type="hidden">iz valute: </label>
+	<select id="iznosValuta" style="position-right">
+		<option value="AUD">AUD-Australian Dollar</option>
+		<option value="BGN">BGN-Bulgarian Lev</option>
+		<option value="BRL">BRL-Brazilian Real</option>
+		<option value="CAD">CAD-Canadian Dollar</option>
+		<option value="CHF">CHF-Swiss Franc</option>
+		<option value="CNY">CNY-Chinese Yuan Renminbi</option>
+		<option value="CZK">CZK-Czech Koruna</option>
+		<option value="DKK">DKK-Danish Krone</option>
+		<option value="EUR">EUR-Euro</option>
+		<option value="GBP">GBP-British Pound	</option>
+		<option value="HKD">HKD-Hong Kong Dollar</option>
+		<option value="HRK">HRK-Croatian Kuna</option>
+		<option value="HUF">HUF-Hungarian Forint</option>
+		<option value="IDR">IDR-Indonesian Rupiah</option>
+		<option value="ILS">ILS-Israeli Shekel</option>
+		<option value="INR">INR-Indian Rupee</option>
+		<option value="JPY">JPY-Japanese Yen</option>
+		<option value="KRW">KRW-South Korean Won</option>
+		<option value="MXN">MXN-Mexican Peso</option>
+		<option value="MYR">MYR-Malaysian Ringgit</option>
+		<option value="NOK">NOK-Norwegian Krone</option>
+		<option value="PHP">PHP-Philippine Peso</option>
+		<option value="PLN">PLN-Polish Zloty</option>
+		<option value="RON">RON-Romanian New Leu</option>
+		<option value="RUB">RUB-Russian Ruble</option>
+		<option value="SEK">SEK-Swedish Krona</option>
+		<option value="SGD">SGD-Singapore Dollar</option>
+		<option value="THB">THB-Thai Baht</option>
+		<option value="TRY">TRY-Turkish Lira</option>
+		<option value="USD">USD-US Dollar</option>
+		<option value="ZAR">ZAR-South African Rand</option>
+	</select>
+	<br>
+	<label id="lblresult5" type="hidden">u valutu:</label>
+		<select id="rezultatValuta">
+		<option value="AUD">AUD-Australian Dollar</option>
+		<option value="BGN">BGN-Bulgarian Lev</option>
+		<option value="BRL">BRL-Brazilian Real</option>
+		<option value="CAD">CAD-Canadian Dollar</option>
+		<option value="CHF">CHF-Swiss Franc</option>
+		<option value="CNY">CNY-Chinese Yuan Renminbi</option>
+		<option value="CZK">CZK-Czech Koruna</option>
+		<option value="DKK">DKK-Danish Krone</option>
+		<option value="EUR">EUR-Euro</option>
+		<option value="GBP">GBP-British Pound	</option>
+		<option value="HKD">HKD-Hong Kong Dollar</option>
+		<option value="HRK">HRK-Croatian Kuna</option>
+		<option value="HUF">HUF-Hungarian Forint</option>
+		<option value="IDR">IDR-Indonesian Rupiah</option>
+		<option value="ILS">ILS-Israeli Shekel</option>
+		<option value="INR">INR-Indian Rupee</option>
+		<option value="JPY">JPY-Japanese Yen</option>
+		<option value="KRW">KRW-South Korean Won</option>
+		<option value="MXN">MXN-Mexican Peso</option>
+		<option value="MYR">MYR-Malaysian Ringgit</option>
+		<option value="NOK">NOK-Norwegian Krone</option>
+		<option value="PHP">PHP-Philippine Peso</option>
+		<option value="PLN">PLN-Polish Zloty</option>
+		<option value="RON">RON-Romanian New Leu</option>
+		<option value="RUB">RUB-Russian Ruble</option>
+		<option value="SEK">SEK-Swedish Krona</option>
+		<option value="SGD">SGD-Singapore Dollar</option>
+		<option value="THB">THB-Thai Baht</option>
+		<option value="TRY">TRY-Turkish Lira</option>
+		<option value="USD">USD-US Dollar</option>
+		<option value="ZAR">ZAR-South African Rand</option>
+	</select><br>
+ <label id="lblresult6" type="hidden">==</label> <br>
+ <input type="text" name="lname" id="rezultat" readonly> <br><br>
+	<button onclick="myFunction()">IZRACUNAJ</button>
+	
+<!-- this function will send http request and parse JSON object to get rates from it. Rate is used to calculate currency value -->
+		<script>
+			function myFunction() {
+			
+			var xmlhttp  = new XMLHttpRequest();			
+			var zaBazu = document.getElementById("iznosValuta");
+			var baza =  zaBazu.options[zaBazu.selectedIndex].value;
+			var url = "http://api.fixer.io/latest?base=" + baza;
+			xmlhttp.open('GET', url, true);
+			xmlhttp.send();
+			
+			xmlhttp.onreadystatechange=function() {
+				 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+				 
+				var arr = JSON.parse(xmlhttp.responseText);
+				var out ="";
+				var zaValuticu = document.getElementById("rezultatValuta");
+				var valutica = zaValuticu.options[zaValuticu.selectedIndex].value;
+				var iznoss = document.getElementById("iznos").value;
+				out = arr.rates[valutica];
+				document.getElementById("rezultat").value = out*iznoss;
+				if(baza == valutica){
+					document.getElementById("rezultat").value = 1*iznoss;
+				}
+				 }
+			}
+			
+				
+			}
+		</script>
+                     </p>
+                 </div>
+                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-responsive" src="img/best.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Određivanje geografske širine i geografske dužine</h2>
+                    <p class="lead">
+                        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signedin=true&libraries=places"></script>
+                         <script type="text/javascript">
+                          google.maps.event.addDomListener(window, 'load', intilize);
+                          function intilize() {
+                            var autocomplete = new google.maps.places.Autocomplete(document.getElementById("lokacija"));
+                           google.maps.event.addListener(autocomplete, 'place_changed', function () {
+                           var place = autocomplete.getPlace();
+                           var location2 = "Address: " + place.formatted_address + "<br/>";
+                             });
+                           document.getElementById("lokacija")=location2;
+
+
+                            };
+
+                            </script>
+                            <label id="lblresult3" type="hidden">Lokacija </label>
+                     <input type="text"  id="lokacija" placeholder="Unesi adresu">
+                     <button onclick="myFunction2(),setTimeout(initMap, 1000)"><img src="img/earth.png" alt="" id="slika"></button><br><br>
+                      <label id="lblresult" type="hidden">Geografska širina</label>
+                     <input type="text"  id="sirina" placeholder="" values=" "><br>
+                      <label id="lblresult2" type="hidden">Geografska dužina </label>
+                     <input type="text"  id="duzina" placeholder="" values=" ">
+					 <script>
+                     function myFunction2() {
+                        var xmlhttp  = new XMLHttpRequest();
+                        var url="http://maps.googleapis.com/maps/api/geocode/json?address="+document.getElementById("lokacija").value+"&sensor=true";
+                       	xmlhttp.open('GET', url, true);
+                        xmlhttp.send();
+
+                        xmlhttp.onreadystatechange=function() {
+							if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+								var obj=JSON.parse(xmlhttp.responseText);
+								document.getElementById("sirina").value=obj.results[0].geometry.location.lat;
+								document.getElementById("duzina").value=obj.results[0].geometry.location.lng
+							}
+
+						}
+					}
+                     </script>
+					 
+                    </p>
+                </div>
+                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
+
+                    <script>
+                    var lat=51.5073509;
+                    var lng=-0.1277583;
+                      function initialize() {
+						var mapProp = {
+							center:new google.maps.LatLng(lat,lng),
+							zoom:5,
+							mapTypeId:google.maps.MapTypeId.ROADMAP
+						};
+                      var map=new google.maps.Map(document.getElementById("map"), mapProp);
+                      }
+                      google.maps.event.addDomListener(window, 'load', initialize);
+                    </script>
+					  <script>
+					  function initMap() {
+					  var lat_set=parseFloat(document.getElementById("sirina").value);
+							var lng_set=parseFloat(document.getElementById("duzina").value);
+						  var myLatLng = {lat: lat_set, lng:lng_set};
+
+						  var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 15,
+							center: myLatLng
+						  });
+
+						  var marker = new google.maps.Marker({
+							position: myLatLng,
+							map: map,
+						  });
+					  }
+							
+						
+					  </script>
+                      <div id="map" style="width:500px;height:380px;"></div>
+                    
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+    <div class="content-section-a">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Možete nas kontaktirati putem forme ili telefona</h2>
+                    <p class="lead"><b>Adresa:</b> Save Kovačevića 58, 34000 Kragujevac, Serbia
+                     <b>Centrala:</b> 034/202-200 (Fax: 061/8208065 )
+                     <b>Računovodstvo i finansije:</b> 034/202-208<br>
+                     
+                     </p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+                    <div class="row">
+                    <label for="name">Ime:</label><br />
+                    <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    </div>
+                     <div class="row">
+                    <label for="email">Email:</label><br />
+                    <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    </div>
+                   <div class="row">
+                   <label for="message">Poruka:</label><br />
+                  <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+                 </div>
+                 <input id="submit_button" type="submit" value="Pošalji" />
+                </form>                     
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <a  name="contact"></a>
+    <div class="banner">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Pratite naš rad: </h2>
+                </div>
+                <div class="col-lg-6">
+                    <ul class="list-inline banner-social-buttons">
+                        <li>
+                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="list-inline">
+                        
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services">Usluge</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact">Kontakt</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Konvertor 2016. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
